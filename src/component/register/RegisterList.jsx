@@ -18,8 +18,12 @@ export default class RegisterList extends Component {
         this.deleteRegister = this.deleteRegister.bind(this);
     } //end constructor
 
-    //function
 
+
+     //cdm 
+    //1-) constructor
+    //2-) render 
+    //3-) CDM
     //cdm:api servise erişim sağlamak
     componentDidMount() {
         RegisterService.apiRegisterList().then(
@@ -32,7 +36,7 @@ export default class RegisterList extends Component {
             }
         )
     }
-    //AJAX,SOCKET
+     //function
 
     //EKLEME SAYFASI REDIRECT
     addRegister() {
