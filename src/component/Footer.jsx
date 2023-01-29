@@ -18,7 +18,7 @@ export default function Footer(props) {
         <div className="col-md-5 col-12 mb-4 mb-md-0">
           <div className="form-outline mb-4">
             <input type="email" id="form5Example25" className="form-control" />
-            <label className="form-label" for="form5Example25">Email address</label>
+            <label className="form-label" htmlFor="form5Example25">Email address</label>
           </div>
         </div>
         <div className="col-auto mb-4 mb-md-0">
