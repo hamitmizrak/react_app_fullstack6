@@ -5,7 +5,7 @@ export default function Footer(props) {
     <>
   
 
-  <footer className="bg-dark text-center text-lg-start text-white mt-2 fixed-bottom">
+  <footer className="bg-dark text-center text-lg-start text-white mt-2 fixed-bottom44">
   <div className="container p-4 pb-0">
     <form action="">
       <div className="row">

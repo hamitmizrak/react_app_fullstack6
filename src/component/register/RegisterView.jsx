@@ -14,7 +14,6 @@ export default class RegisterView extends Component {
 
             }
         }
-
         //bind
     }
 
@@ -31,8 +30,6 @@ export default class RegisterView extends Component {
      }// end componentDidMount
 
     //function
-
-
 
     render() {
         return (
@@ -52,4 +49,3 @@ export default class RegisterView extends Component {
         ) //end return
     } // end render
 } //end class RegisterList
-
