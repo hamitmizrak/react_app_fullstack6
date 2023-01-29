@@ -90,7 +90,6 @@ export default class RegisterCreate extends Component {
     //SUBMIT
     createOrUpdate = (event) => {
         event.preventDefault();
-
         const registerDto = {
             username: this.state.username,
             surname: this.state.surname,
@@ -107,18 +106,18 @@ export default class RegisterCreate extends Component {
                         this.props.history.push("/register_list");
                     }
                 }
-            ).catch(error=>{
-                console.log("CREATE NOT: "+error.response.data)
+            ).catch(error => {
+                console.log("CREATE NOT: " + error.response.data)
             }); //then
-        }else{
-            RegisterService.apiRegisterUpdate(this.state.id,registerDto).then(
+        } else {
+            RegisterService.apiRegisterUpdate(this.state.id, registerDto).then(
                 response => {
                     if (response.status === 200) {
                         this.props.history.push("/register_list");
                     }
                 }
-            ).catch(error=>{
-                console.log("UPDATE NOT: "+error.response.data)
+            ).catch(error => {
+                console.log("UPDATE NOT: " + error.response.data)
             }); //then
         }
     }
@@ -177,7 +176,7 @@ export default class RegisterCreate extends Component {
                                     onChange={this.onChangeTelephoneNumber}
                                     value={this.state.telephoneNumber}
                                 />
-                            </div> 
+                            </div>
 
                             <div className="form-group mb-3">
                                 <label htmlFor="">EMAİL</label>
@@ -190,7 +189,7 @@ export default class RegisterCreate extends Component {
                                 />
                             </div>
 
-                        
+
                             <div className="form-group mb-3">
                                 <button className="btn btn-primary" onClick={this.createOrUpdate}>Gönder</button>
                             </div>
@@ -202,3 +201,8 @@ export default class RegisterCreate extends Component {
         ) //end return
     } // end render
 } //end class RegisterList
+
+// resuabilty
+// update 
+// create
+// spinner (loading)
